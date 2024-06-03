@@ -1,0 +1,16 @@
+version: "3.9"
+
+services: #definimos los contenedores de la aplicacion
+  web:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./html:/var/www/html
+  db:
+    image: mysql:latest
+    environment: #definimos variables de entorno
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: mydatabase
+    volumes:
+      - /var/lib/mysql

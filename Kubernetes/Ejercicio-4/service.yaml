@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service-ejercicio4
+spec:
+  selector:
+    app: myapp-ejercicio4
+  ports:
+  - port: 80
+    targetPort: 3000

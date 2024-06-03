@@ -1,0 +1,14 @@
+{
+  "name": "docker-node",
+  "version": "1.0.0",
+  "description": "Una descripción de tu proyecto",
+  "main": "index.js",
+  "scripts": {
+      "start": "node index.js"
+  },
+  "author": "Tu Nombre",
+  "license": "MIT",
+  "dependencies": {
+      "http": "*"
+  }
+}

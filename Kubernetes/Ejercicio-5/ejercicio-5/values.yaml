@@ -1,0 +1,19 @@
+replicaCount: 1
+
+image:
+  repository: agustingom99/ejercicio-5
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 80
+  nodePort: 30080
+
+resources: {}
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
